@@ -7,14 +7,13 @@
 
     <style>
         button{
-            background-color: grey;
-            
+            background-color: grey;       
         }
     </style>
 </head>
 <body>
     
-    <input id="textIn">
+    <input>
     <button onclick= "greeting('hello')">Add</button>
 
     <ul id="taskContent">
@@ -24,10 +23,6 @@
     </ul>
 
     <script>
-        function greeting(hello){
-            document.getElementById('textIn').value = 'jhh'
-        }
-
         function greeting(hello){
             document.getElementById("taskContent").innerHTML= '<li>'+ hello + '</li>' 
         }
