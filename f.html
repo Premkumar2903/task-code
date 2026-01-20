@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <input id="textIn">
+    <input onchange="add(event)" id="textIn">
     <button onclick= "text()">Add</button>
 
     <ul id="taskContent">
@@ -24,14 +24,16 @@
     </ul>
 
     <script>
-        let content = document.getElementById('taskContent')
+        
+        let hr;
         function text(){
-            document.getElementById('textIn').value = 'jhh'
+            document.getElementById('taskContent').innerHTML = "<li>"+ hr +"</li>"
         }
-
-        function greeting(hello){
-            document.getElementById("taskContent").innerHTML= '<li>'+ hello + '</li>' 
+        
+        function add(l){
+            hr = l.target.value;
         }
+        
     </script>
 </body>
 </html>
