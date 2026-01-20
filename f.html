@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do</title>
+
+    <style>
+        button{
+            background-color: grey;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <input id="textIn">
+    <button onclick= "text()">Add</button>
+
+    <ul id="taskContent">
+        <li>wake up</li>
+        <li>Learn</li>
+        <li>Sleep</li>
+    </ul>
+
+    <script>
+        let content = document.getElementById('taskContent')
+        function text(){
+            document.getElementById('textIn').value = 'jhh'
+        }
+
+        function greeting(hello){
+            document.getElementById("taskContent").innerHTML= '<li>'+ hello + '</li>' 
+        }
+    </script>
+</body>
+</html>
