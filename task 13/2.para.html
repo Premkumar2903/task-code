@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            
+            /* Selects: <p class="para1"> */
+            p.para1 {
+                color: red;
+            }
+
+            /*  Selects: <p id="para1"> */
+            p#para1 {
+                color: blue;
+            }
+
+            /*  Selects: any <p> INSIDE an element with id="para1" */
+            #para1 p {
+                font-size: 2rem;
+                color: green;
+            }
+
+            .changeOrange {
+                color: red !important
+            }
+
+            .pseudo::before{
+                content: "I";
+                font-size: 21px;
+            }
+            .pseudo::after{
+                content: "Web Dev";
+                font-size: 23px;
+                font-family: cursive;
+            }
+            .pseudoClass:link{
+                color: blue;
+            }
+            .pseudoClass:visited{
+                color: rgb(224, 57, 219);
+            }
+            .pseudoClass:hover{
+                color: palegreen;
+            }
+            .pseudoClass:active{
+                color: olive;
+            }
+            #submit{
+                background-color: palevioletred;
+                width: 50%;
+                height: 400px;
+                margin-top: 600px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p id="para1"> hello p#para1 </p>
+
+        <p class="para1">hello p.para1</p>
+      
+
+        <div id="para1">
+            <p>a para Nested inside div #para1 p</p>
+        </div>
+
+        <div>
+            I like to eat <span class="changeOrange" style="color: orange;">Orange!</span>
+        </div>
+
+        <div class="pseudo">
+            am
+        </div>
+
+        <a href="#submit" class="pseudoClass">
+            Goto Submit
+        </a>
+
+        <div  id="submit" type="submit">Submit</div>
+
+        
+    </body>
+</html>
