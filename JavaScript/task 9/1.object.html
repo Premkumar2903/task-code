@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <script>
+            //1
+            var studName = 'John'
+            var score = 80
+            var scores = [75,60,90,45]
+
+            console.log(`${studName} scored ${score} marks`)
+
+            //2
+            if(score >= 50) {
+                console.log('Passed')
+            } else{
+                console.log('Failed')
+            }
+
+
+            //3
+            function greet(studName) {
+                return('Hello ' + studName)
+            }
+
+            console.log (greet (studName))
+
+            //4
+            console.log(scores[0])
+            console.log('Length of the scores:'+scores.length)
+
+            //5
+            for(i=0; i<scores.length; i++) {
+                console.log(scores[i])
+            }
+
+            //6
+            student = {
+                name: 'John',
+                age: '22',
+                grade: 'A'
+            }
+
+            console.log(`${student.name} is ${student.age} years old`)
+
+        </script>
+</body>
+</html>
