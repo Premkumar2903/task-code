@@ -19,6 +19,16 @@
 // }
 // console.log(hee('we', 'go', 'again'))
 
+const [first, ...others] = [10, 20, 30, 40];
+
+console.log(first);   // 10
+
+function a(a,b,...n) {
+    console.log(a,b,...n)
+    
+}
+console.log(a(1,2,...n))
+
 
 function multi (...value) {    //multiply 2 values
     return value[0] * value[1];
