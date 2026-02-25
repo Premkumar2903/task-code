@@ -10,7 +10,6 @@ a = 50
 
 
 
-
 //function hoisting
 vanakkam(); 
 
