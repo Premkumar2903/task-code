@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            border: solid lightseagreen;border: solid lightseagreen;
+            box-sizing: border-box;           /*padding and border are included */
+            padding: 30px;
+            border-width: 5px;
+            box-sizing: border-box;           /*padding and border are included */
+            padding: 30px;
+            border-width: 5px;
+        }
+
+        .div2{
+            height: 300px;
+            width: 300px;margin-top: 40px;
+            border: solid lightseagreen;
+            box-sizing: content-box;           /*padding and border are not included default */
+            padding: 30px;
+            border-width: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>sizing box based on text</p>
+    </div>
+
+    <div class="div2">
+        sizing box without padding and border
+    </div>
+</body>
+</html>
