@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+
+    <div class="con"></div>
+    <script type="text/babel">
+        
+
+        function Header({ title }) {
+            return(
+                <>  
+                    <header>
+                       <h1> {title} </h1>
+                    </header>
+
+                </>
+            )
+        }
+
+        const container = document.querySelector('.con')
+        ReactDOM.createRoot(container).render(<Header title='website'/>) 
+    </script>
+</body>
+</html>
+
