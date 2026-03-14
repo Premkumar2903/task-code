@@ -9,7 +9,7 @@ export default function ProductList() {
     { name: "Light", id: 100, price: 1300 },
     { name: "Speaker", id: 101, price: 5000 },
     { name: "Laptop", id: 102, price: 50000 },
-  ];
+  ];   
 
   // FILTER LOGIC
   const filteredProducts = products.filter((p) =>
