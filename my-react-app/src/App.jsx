@@ -6,6 +6,7 @@ import ProductList from './task-03/ProductList.jsx'
 import Check from './task-04/Mainpage.jsx'
 import Counter from './task-04/2.counter.jsx'
 import Signup from './task-06/1.form.jsx'
+import UserRun from './task-07/useEffect.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -39,7 +40,9 @@ function App() {
 
       {/* <Counter/> */}
 
-      <Signup/>
+      {/* <Signup/> */}
+
+      <UserRun/>
       
     </>
   )
