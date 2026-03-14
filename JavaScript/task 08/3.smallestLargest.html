@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [2,10,18,7,6,4];
+
+        function find(num){
+            // before looping we need starting value to compare with other
+            let smallest = num[0]; //picks 0 index
+            let largest = num[0];  //picks 0 index
+
+            for(let i = 1; i < num.length; i++) { //stats i=1 because 0 is already used
+                if (num[i] < smallest){
+                    smallest = num[i];
+                }
+                
+                if (num[i] > largest){
+                    largest =num[i];
+                }
+                console.log(i)
+            }
+            return {smallest,largest}
+        }
+        
+        const result = find(arr);
+
+        console.log('Smallest:', result.smallest);
+        console.log('Biggest:', result.largest);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do</title>
+
+    <style>
+        button{
+            background-color: grey;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <input onchange="add(event)" id="textIn">
+    <button onclick= "text()">Add</button>
+
+    <ul id="taskContent">
+        <li>wake up</li>
+        <li>Learn</li>
+        <li>Sleep</li>
+    </ul>
+
+    <script>
+        
+        let hr;
+        function text(){
+            document.getElementById('taskContent').innerHTML = "<li>"+ hr +"</li>"
+        }
+        
+        function add(l){
+            hr = l.target.value;
+        }
+        
+    </script>
+</body>
+</html>

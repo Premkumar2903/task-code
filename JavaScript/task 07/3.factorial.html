@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="input" type="number"> 
+    <button onclick="find()">Find</button>
+    <p id="result">factoral is</p>
+    
+
+    <script>                                                                                                                                    
+           
+        function factorial(n) {
+
+            let result = 1;  
+
+            for(i=1; i<=n ; i++) {  //preints upto n nums
+                result *= i;              
+            }
+
+            return  result;
+        }
+        console.log(factorial(5)) 
+
+        function find() {
+              let number = Number(document.getElementById('input').value);
+              document.getElementById('result').innerHTML='factoral is ' + factorial(number);
+        }
+      
+    </script>
+</body>
+</html>

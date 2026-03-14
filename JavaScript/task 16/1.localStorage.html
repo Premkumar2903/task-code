@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name" type="text" placeholder="name"><br>
+    <input id="dob" type="date" name="" id=""><br>
+    <button>submit</button>
+    <p></p>
+    <script>
+        restore();
+
+        window.onload = function() {
+                document.querySelector('button').addEventListener('click',function(){
+                obj = {
+                    name : document.getElementById('name').value,
+                    dob : document.getElementById('dob').value
+                }
+                
+                localStorage.setItem('register',JSON.stringify(obj));
+                restore();
+           })
+        };
+        
+        function restore() {
+            savedData = JSON.parse (localStorage.getItem('register'));
+
+            if(savedData){
+                document.querySelector('p').innerHTML=`
+                Name: ${savedData.name}, DOB: ${savedData.dob}`
+            }      
+        };
+    </script>
+</body>
+</html>

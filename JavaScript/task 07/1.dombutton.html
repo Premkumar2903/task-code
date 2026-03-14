@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick=" alert('Welcome')">Click</button>
+    <input type="text" name="" id="input" oninput="typeText()">
+    <p>Type </p>
+    <button id="submit" onclick="submit()">submit</button>
+
+    <script>
+        
+        function typeText() {
+            const val = document.getElementById('input').value
+            const para = document.querySelector('p').innerHTML = val
+        }
+        function submit(){
+            document.getElementById('submit').addEventListener('click', alert('submitted'))
+        }
+        
+        
+    </script>
+</body>
+
+
+</html>

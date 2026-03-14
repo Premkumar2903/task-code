@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            background-color: rgb(255, 203, 5);
+            color: rgb(0, 102, 179);
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav{
+            background: rgb(0, 102, 179);
+            padding: 2px;
+        }
+        nav ul{
+            display: flex;  
+            list-style: none;
+            column-gap: 15px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            font-size: larger;
+            color: rgb(255, 203, 5)
+
+        }
+        img{
+            height: 150px;
+            width: 250px;
+        }
+        #player{
+            display: flex;
+            flex-wrap: wrap;
+            background: url('https://www.chennaisuperkings.com/assets/images/csk_logo_withOutGradient.png') no-repeat;
+            background-size: contain;  
+            background-size: 1000px 1000px; 
+            background-position: center;
+        }
+        .playerId:hover{
+            transition: 0.8s;
+            transform: scale(1.25);
+            background-color:rgb(255, 203, 5);
+        }
+        .playerId{
+            margin: 25px;
+        }
+        h4{
+            color: rgb(0, 102, 179);
+        }
+        footer{
+            text-align: center;
+            background-color: rgb(255, 203, 5) ;
+            color: rgb(0, 102, 179);
+            padding: 10px;
+            font-weight: bold;
+        }
+        #csk{
+            height: 100px;
+            width: 100px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>THE CHENNAI TIMES</h1>
+        <img id="csk" src="images/csk_logo_withOutGradient.png" alt="">
+        <h3>EDITION</h3>
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#player">Batters</a>
+        </li>
+        <li>
+          <a href="#">Bowlers</a>
+        </li>
+        <li>
+          <a href="#">All rounders</a>
+        </li>
+       
+      </ul>
+    </nav>
+
+    <main>  
+        <section>
+            <h2>CSK have the best batting lineup in IPL 2026</h2>
+        </section>
+        <main>
+            <section >
+                <h3>The List of Batsman are</h3>
+                <div id="player">
+                    <div class="playerId">
+                        <h4 >1.Ayush Mathre</h4>
+                         <img src="images/mathre.jpg" alt="">
+                    </div>
+                    <div class="playerId">
+                        <h4 >2.Ruthuraj</h4>
+                         <img src="images/rutu.jpg">
+                    </div>
+                    <div class="playerId">
+                        <h4 >3.Samju Samson</h4>
+                         <img src="images/sanju.jpg" alt="">
+                    </div>
+                    <div class="playerId">
+                        <h4 >4.Urvil Patel</h4>
+                         <img src="images/urvil.jpg" alt="">
+                    </div>
+                    <div class="playerId">
+                        <h4 >5.Shivam Dube</h4>
+                         <img src="images/dube.jpg" alt="">
+                    </div>
+                    <div class="playerId">
+                        <h4 >6.Devald Brevis</h4>
+                         <img src="images/brevis.jpg" alt="">
+                    </div>
+                    <div class="playerId">
+                        <h4 >7.Ms Dhoni</h4>
+                         <img src="images/dhoni.jpg" alt="">
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <footer>
+                &#xA9 Premkumar
+            </footer>
+        </main>
+    </main>
+</body>
+</html>

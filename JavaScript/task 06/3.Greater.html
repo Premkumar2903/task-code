@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="first">
+    <input type="text" name="" id="second">
+    <input type="text" name="" id="third">
+
+    <button onclick="sum()"> Submit</button>
+
+    <script>
+        
+        function sum () {
+            let a = Number(document.getElementById('first').value)
+            let b=  Number(document.getElementById('second').value)
+            let c = Number(document.getElementById('third').value)
+
+            if(a>=b && a>=c){
+                alert(a)
+            }
+            else if(b>=c && b>=a) {
+                alert(b)
+            }
+            else if(c>=a && c>=b){
+                alert(c)
+            }
+        }
+    </script>
+</body>
+</html>
