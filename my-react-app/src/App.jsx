@@ -7,6 +7,12 @@ import Check from './task-04/Mainpage.jsx'
 import Counter from './task-04/2.counter.jsx'
 import Signup from './task-06/1.form.jsx'
 import UserRun from './task-07/useEffect.jsx'
+import {BrowserRouter , Links ,  Routes , Route} from 'react-router-dom'
+import Home from './task-08/Home.jsx'
+import About from './task-08/About.jsx'
+import Navigation from './task-08/Navigation.jsx'
+import Users from './task-08/Users.jsx'
+import Userdetails from './task-08/UserDetail.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -42,7 +48,19 @@ function App() {
 
       {/* <Signup/> */}
 
-      <UserRun/>
+      {/* <UserRun/> */}
+
+      <BrowserRouter>
+
+      <Navigation/>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/about' element={<About/>}/>
+          <Route path='/users' element={<Users/>}/>
+
+          <Route path='/users/:id' element={<Userdetails/>}/>
+        </Routes>
+      </BrowserRouter>
       
     </>
   )
