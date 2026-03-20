@@ -17,6 +17,12 @@ import Card from './task-09/card.jsx'
 import Navbar from './task-09/Navbar.jsx'
 import ButtonGroup from './task-09/Button.jsx'
 import Button from './task-09/ReuseProp.jsx'
+import Theme from './task-10/1.ThemeMUI.jsx'
+import { ThemeProvider } from '@emotion/react'
+import theme from './task-10/1.ThemeMUI.jsx'
+import LoginForm from './task-10/2Loginform.jsx'
+import ProductCard from './task-10/3.Card.jsx'
+
 
 
 function App() {
@@ -70,11 +76,19 @@ function App() {
       {/* <Card/> */}
 
       {/* <Navbar/> */}
-      <ButtonGroup/> 
+      {/* <ButtonGroup/>  */}
 
       {/* <Button varient='primary'>Primary</Button>
       <Button varient='danger'>Danger</Button>
       <Button varient= 'line'>Outline</Button> */}
+
+      <ThemeProvider theme={theme}>
+        <div style={{padding: 20 }}>
+          
+        </div>
+      </ThemeProvider>
+      <LoginForm/>
+      <ProductCard/>
     </>
   )
 }
