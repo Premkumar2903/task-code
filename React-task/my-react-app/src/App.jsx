@@ -13,6 +13,11 @@ import About from './task-08/About.jsx'
 import Navigation from './task-08/Navigation.jsx'
 import Users from './task-08/Users.jsx'
 import Userdetails from './task-08/UserDetail.jsx'
+import Card from './task-09/card.jsx'
+import Navbar from './task-09/Navbar.jsx'
+import ButtonGroup from './task-09/Button.jsx'
+import Button from './task-09/ReuseProp.jsx'
+
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -50,7 +55,7 @@ function App() {
 
       {/* <UserRun/> */}
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
 
       <Navigation/>
         <Routes>
@@ -60,8 +65,16 @@ function App() {
 
           <Route path='/users/:id' element={<Userdetails/>}/>
         </Routes>
-      </BrowserRouter>
-      
+      </BrowserRouter> */}
+
+      {/* <Card/> */}
+
+      {/* <Navbar/> */}
+      <ButtonGroup/> 
+
+      {/* <Button varient='primary'>Primary</Button>
+      <Button varient='danger'>Danger</Button>
+      <Button varient= 'line'>Outline</Button> */}
     </>
   )
 }
