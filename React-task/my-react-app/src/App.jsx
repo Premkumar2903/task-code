@@ -23,6 +23,8 @@ import theme from './task-10/1.ThemeMUI.jsx'
 import LoginForm from './task-10/2.Loginform.jsx'
 import ProductCard from './task-10/3.Card.jsx'
 import { CssBaseline } from '@mui/material'
+import DisplayCounter from './task-11/components/DisplayCounter.jsx'
+import CounterButtons from './task-11/components/CounterButton.jsx'
 
 
 
@@ -92,6 +94,11 @@ function App() {
       {/* <LoginForm/>
       <ProductCard/> */}
 
+        <div>
+          <h1>Redux Counter</h1>
+            <DisplayCounter/>
+            <CounterButtons/>
+        </div>
     </>
   )
 }
