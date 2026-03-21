@@ -15,7 +15,7 @@ export default function LoginForm() {
     <Box
       component="form"
       onSubmit={handleSubmit}
-      sx={{ display: "flex", flexDirection: "column", gap: 2, maxWidth: 300 }}
+      sx={{ display: "flex", flexDirection: "column", gap: 2, maxWidth: 300 , margin: 3}}
     >
       <Typography variant="h6">Login</Typography>
 
