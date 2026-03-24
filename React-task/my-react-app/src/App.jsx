@@ -25,6 +25,7 @@ import ProductCard from './task-10/3.Card.jsx'
 import { CssBaseline } from '@mui/material'
 import DisplayCounter from './task-11/components/DisplayCounter.jsx'
 import CounterButtons from './task-11/components/CounterButton.jsx'
+import Todo from './task-12/todo.jsx'
 
 
 
@@ -94,11 +95,12 @@ function App() {
       {/* <LoginForm/>
       <ProductCard/> */}
 
-        <div>
-          <h1>Redux Counter</h1>
-            <DisplayCounter/>
-            <CounterButtons/>
-        </div>
+      {/* <div>
+        <h1>Redux Counter</h1>
+          <DisplayCounter/>
+          <CounterButtons/>
+      </div> */}
+      <Todo/>
     </>
   )
 }
