@@ -26,6 +26,7 @@ import { CssBaseline } from '@mui/material'
 import DisplayCounter from './task-11/components/DisplayCounter.jsx'
 import CounterButtons from './task-11/components/CounterButton.jsx'
 import Todo from './task-12/todo.jsx'
+import Model from './task-13/components/model.jsx'
 
 
 
@@ -100,7 +101,10 @@ function App() {
           <DisplayCounter/>
           <CounterButtons/>
       </div> */}
-      <Todo/>
+      
+      {/* <Todo/> */}
+
+      <Model/>
     </>
   )
 }
