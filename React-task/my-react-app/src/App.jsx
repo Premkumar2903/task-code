@@ -23,13 +23,15 @@ import theme from './task-10/1.ThemeMUI.jsx'
 import LoginForm from './task-10/2.Loginform.jsx'
 import ProductCard from './task-10/3.Card.jsx'
 import { CssBaseline } from '@mui/material'
-import DisplayCounter from './task-11/components/DisplayCounter.jsx'
-import CounterButtons from './task-11/components/CounterButton.jsx'
+// import DisplayCounter from './task-11/components/DisplayCounter.jsx'
+// import CounterButtons from './task-11/components/CounterButton.jsx'
 import Todo from './task-12/todo.jsx'
 import Model from './task-13/components/model.jsx'
 import Home from './task-13/pages/Home.jsx'
 import About from './task-13/pages/About.jsx'
-import GrandParent from './task-14/grandParent.jsx'
+import GrandParent from './task-14/PropDrilling/grandParent.jsx'
+import DisplayCounter from './task-14/Redux/DisplayCounter.jsx'
+import CounterButtons from './task-14/Redux/CounterButtons.jsx'
 
 
 function App() {
@@ -110,6 +112,8 @@ function App() {
       <About/> */}
 
       <GrandParent/>
+      <DisplayCounter/>
+      <CounterButtons/>
     </>
   )
 }
