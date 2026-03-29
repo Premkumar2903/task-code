@@ -8,7 +8,7 @@ import Modal from "../components/model";
 
     return(
         <>
-            <button onClick={()=> setOpen(true)}>Open About model</button>
+            <button className="ml-3" onClick={()=> setOpen(true)}>Open About model</button>
 
             <Modal onClose={() => setOpen(false)} open={open} title='About modal'>
                 <p >modal diaplayed on about page</p>
