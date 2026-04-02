@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #list{
+            display: flex;
+            list-style: none;
+            gap: 15px;
+            list-style: none;
+            
+        }
+        #list li a{
+            text-decoration: none;
+            color: white;
+        } 
+        nav{
+            background-color: darkslategrey;
+            padding: 15px 15px;
+        }
+        .product{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            
+        }
+        .items{
+            width: 200px;
+            margin: 2px;
+        }
+        .items img{
+            width: 180px;
+            height: 200px;
+            object-fit: contain;
+        }
+        .buy-btn{
+            background-color: rgb(162, 209, 238);
+            border: none ;
+            width: 90px;
+            padding: 5px 8px;
+            border-radius: 4px;
+        }
+        .cart-btn{
+            background-color: rgb(231, 195, 36);
+            border: none;
+            width: 90px;
+            padding: 5px 8px;
+            border-radius: 4px;
+        }
+        h3{
+            margin: 10px 0px;
+            background-color: mediumaquamarine;
+            padding: 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div>
+        <header>
+            <nav>
+                <ul id="list">
+               
+                    <li>  <a href="">Home</a> </li>
+                
+                    <li>  <a href="">Orders</a> </li>
+                
+                    <li>  <a href="">About</a> </li>
+                              
+                    <li> <a href="">Cart</a> </li>
+                
+                 </ul>
+            </nav>
+            
+
+            <h3 >Products</h3>
+        </header>
+
+        <div class="product">
+            <div class="items">
+                <img src="assets/shoes.webp" alt="">
+                <p>Shoes</p>
+                <p>Price &#8377 1500</p>
+                <button class="buy-btn">Buy now</button> 
+                <button class="cart-btn">Add to cart</button>
+            </div>
+
+            <div class="items">
+                <img src="assets/t-shirt.jpg" alt="">
+                <p>t-shirt</p>
+                <p>Price &#8377 500</p>
+                <button class="buy-btn">Buy now</button> 
+                <button class="cart-btn">Add to cart</button>
+            </div>
+
+            <div class="items">
+                <img src="assets/watch3.webp" alt="">
+                <p>watch</p>
+                <p>Price &#8377 2000</p>
+                <button class="buy-btn">Buy now</button> 
+                <button class="cart-btn">Add to cart</button>
+            </div>
+
+            <div class="items">
+                <img src="assets/jeans.webp" alt="">
+                <p>jeans</p>
+                <p>Price &#8377 800</p>
+                <button class="buy-btn">Buy now</button> 
+                <button class="cart-btn">Add to cart</button>
+            </div>
+
+            <div class="items">
+                <img src="assets/bag.webp" alt="">
+                <p>Bag</p>
+                <p>Price &#8377 800</p>
+                <button class="buy-btn">Buy now</button> 
+                <button class="cart-btn">Add to cart</button>
+            </div>
+
+            <div class="items">
+                <img src="assets/racquet.webp" alt="">
+                <p>Badminton Racquet</p>
+                <p>Price &#8377 1000</p>
+                <button class="buy-btn">Buy now</button> 
+                <button class="cart-btn">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
