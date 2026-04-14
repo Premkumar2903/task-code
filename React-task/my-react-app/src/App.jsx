@@ -106,14 +106,14 @@ function App() {
           <CounterButtons/>
       </div> */}
       
-      {/* <Todo/> */}
+      <Todo/>
 
       {/* <Home/>
       <About/> */}
 
-      <GrandParent/>
+      {/* <GrandParent/>
       <DisplayCounter/>
-      <CounterButtons/>
+      <CounterButtons/> */}
     </>
   )
 }

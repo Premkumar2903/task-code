@@ -1,0 +1,37 @@
+
+*{
+    background-color: rgb(167, 236, 213);
+}
+
+.input{
+    color: black;
+    width: 250px;
+    height: 35px;
+    border: solid 0.5px black;
+    margin: 20px ;
+}
+.input::placeholder{
+    padding-left: 10px;
+    color: rgb(65, 44, 44);
+}
+
+.add-btn{
+    background-color: azure;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.task-container{
+    margin: 20px;
+}
+
+.task-list{
+    margin: 10px;
+}
+
+.remove-btn{
+    background-color: aliceblue;
+    padding: 3px 5px;
+    margin-left: 8px;
+    border-radius: 4px;
+}
