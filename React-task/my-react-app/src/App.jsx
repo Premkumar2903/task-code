@@ -70,7 +70,7 @@ function App() {
 
       {/* <UserRun/> */}
 
-      {/* <BrowserRouter>
+      
 
       <Navigation/>
         <Routes>
@@ -80,8 +80,7 @@ function App() {
 
           <Route path='/users/:id' element={<Userdetails/>}/>
         </Routes>
-      </BrowserRouter> */}
-
+      
       {/* <Card/> */}
 
       {/* <Navbar/> */}
@@ -106,7 +105,7 @@ function App() {
           <CounterButtons/>
       </div> */}
       
-      <Todo/>
+      {/* <Todo/> */}
 
       {/* <Home/>
       <About/> */}
